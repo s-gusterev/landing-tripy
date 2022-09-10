@@ -1,5 +1,6 @@
 .all-tour {
   position: relative;
+  z-index: 1;
   padding-bottom: 120px;
   &__title {
     text-align: center;
@@ -25,6 +26,7 @@
     margin-right: auto;
     margin-bottom: 298px;
     display: table;
+    z-index: 10;
   }
   &__cards {
     display: flex;
@@ -34,6 +36,11 @@
     left: 0;
     right: 0;
     top: 34%;
+    z-index: -1;
+  }
+
+  &__link {
+    text-decoration: none;
   }
 
   &__card_type_false {
