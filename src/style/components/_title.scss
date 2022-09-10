@@ -1,0 +1,22 @@
+.title {
+  color: $color-dark;
+  margin: 0;
+  padding: 0;
+
+  &_type_primary {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    text-shadow: 0px 12px 40px rgba(0, 0, 0, 0.04);
+  }
+
+  &_type_secondary {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+  }
+
+  &_type_secondary-width-large {
+    max-width: 591px;
+  }
+}

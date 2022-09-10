@@ -1,0 +1,26 @@
+.button-slider {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(230, 28, 93, 0.04);
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 150ms ease-in-out;
+
+  &:active {
+    transform: scale(1.2);
+  }
+  &_type_left {
+    background-image: url(./img/arrow-left.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &_type_right {
+    background-image: url(./img/arrow-right.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

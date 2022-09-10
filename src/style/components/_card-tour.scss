@@ -1,0 +1,91 @@
+.card-tour {
+  background: $color-light-100;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  &_type_true {
+    width: 254px;
+    padding: 0 10px 21px 10px;
+  }
+  &_type_false {
+    width: 190px;
+    padding: 0 7px 11px 7px;
+  }
+
+  &__img {
+    border-radius: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+
+    &_type_true {
+      width: 235px;
+      height: 190px;
+      margin-top: 7px;
+      margin-bottom: 12px;
+    }
+
+    &_type_false {
+      width: 176px;
+      height: 143px;
+      margin-top: 6px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: $color-dark;
+
+    &_type_true {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &_type_false {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__price-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: $color-primary;
+    margin: 0;
+
+    &_type_true {
+      font-size: 20px;
+      line-height: 26px;
+      margin-right: 13px;
+    }
+    &_type_false {
+      font-size: 16px;
+      line-height: 21px;
+      margin-right: 15px;
+    }
+  }
+
+  &__day-tour {
+    margin: 0;
+    font-weight: 500;
+    color: $color-light-200;
+
+    &_type_true {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &_type_false {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+}

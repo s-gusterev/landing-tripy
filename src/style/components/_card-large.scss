@@ -1,0 +1,86 @@
+.card-large {
+  min-width: 370px;
+  max-width: 370px;
+  width: 100%;
+  filter: drop-shadow(0px 12px 40px rgba(0, 0, 0, 0.04));
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: $color-light-100;
+  box-sizing: border-box;
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+  &__text {
+    padding: 20px 26px 30px 24px;
+    box-sizing: border-box;
+  }
+  &__title {
+    color: $color-dark;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  &__location {
+    color: $color-dark;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    padding: 4px 6px;
+    background-color: rgba(255, 189, 57, 0.12);
+    border-radius: 38px;
+    width: max-content;
+    margin-bottom: 8px;
+  }
+
+  &__rating-number {
+    color: $color-secondary;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    margin: 0;
+  }
+
+  &__star {
+    width: 15.55px;
+    height: 15.64px;
+    background-image: url(./img/card-large/magic-star.svg);
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__text-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    margin: 0;
+    color: $color-primary;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__duration {
+    color: $color-light-200;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 0;
+  }
+}

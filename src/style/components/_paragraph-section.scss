@@ -1,0 +1,16 @@
+.paragraph-section {
+  color: $color-light-200;
+  font-weight: 400;
+  margin: 0;
+
+  &_type_primary {
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 469px;
+  }
+
+  &_type_secondary {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

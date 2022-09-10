@@ -1,0 +1,55 @@
+.tour {
+  overflow-x: hidden;
+  overflow-y: visible;
+  &__container {
+    position: relative;
+    // clip-path: inset(-100vw -100vw -100vw 0);
+  }
+  &__subtitle {
+    margin-bottom: 4px;
+  }
+  &__title {
+    margin-bottom: 80px;
+  }
+  &__button-left {
+    position: absolute;
+    right: 58px;
+    top: 45.5px;
+  }
+  &__button-right {
+    position: absolute;
+    right: 0;
+    top: 45.5px;
+  }
+}
+
+.tour__slider {
+  width: 100vw;
+  display: flex;
+  column-gap: 30px;
+  // padding-bottom: 120px;
+}
+
+// .tour__slider-wrapper {
+//   display: flex;
+// }
+
+.tour__slide_prev {
+  opacity: 0;
+  transition: all 350ms ease;
+}
+
+.slick-list {
+  // overflow: auto !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  padding-bottom: 120px !important;
+  padding-left: 40px !important;
+  margin-left: -40px !important;
+}
+
+.slick-disabled {
+  background-color: $color-light-100 !important;
+
+  cursor: default !important;
+}
