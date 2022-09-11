@@ -23,27 +23,6 @@ const visibleLocationForm = () => {
   locationButton.classList.toggle('hero__button-ok_active')
 }
 
-// const setValueLocation = new Promise(resolve => {
-//   locationInput.addEventListener("input", (e) => {
-//     const value = e.target.value;
-//     locationInput.setAttribute("value", value)
-//     console.log(value)
-//     resolve(value)
-//   });
-// })
-
-// const setParagraphText = () => {
-//   locationInput.classList.remove('hero__form-location_active');
-//   locationButton.classList.remove('hero__button-ok_active');
-
-//   setValueLocation.then((data) => {
-//     locationParagraph.textContent = data;
-//     console.log(data)
-//   })
-
-// }
-
-
 locationInput.addEventListener("input", (e) => {
   const value = e.target.value;
   locationInput.setAttribute("value", value)
