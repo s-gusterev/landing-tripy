@@ -6,6 +6,7 @@
   &__text {
     max-width: 570px;
   }
+
   &__title {
     margin-bottom: 32px;
   }
@@ -13,6 +14,7 @@
   &__form-fieldset {
     position: relative;
   }
+
   &__form-fieldset_type_location::before {
     position: absolute;
     content: "";
@@ -62,6 +64,44 @@
     box-sizing: border-box;
   }
 
+
+  &__form-location {
+    display: none;
+    position: absolute;
+    border: 1px solid $color-light-200;
+    border-radius: 10px;
+    width: 320px;
+    padding: 3px 7px;
+    box-sizing: border-box;
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__button-ok {
+    width: 55px;
+    height: 24px;
+    position: absolute;
+    border: none;
+    border-radius: 7px;
+    background-color: $color-primary;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: $color-light-100;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    right: -127px;
+    top: 38px;
+    display: none;
+
+    &_active {
+      display: block;
+    }
+  }
+
   &__form-title {
     color: $color-light-200;
     font-size: 12px;
@@ -92,6 +132,13 @@
     line-height: 14px;
     color: $color-dark;
     padding-left: 38px;
+
+    &_type_location {
+      width: 123px;
+      height: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
   &__calendar {
@@ -136,6 +183,7 @@
     border-radius: 233px 233px 0px 0px;
     display: block;
   }
+
   &__img-small {
     max-width: 147px;
     height: 230px;

@@ -9,9 +9,9 @@
   <body class="root">
     <header class="header">
       <div class="header__container root__container">
-        <a href="#" class="logo"
-          ><img class="logo__img" src="./img/logo.svg" alt="logo"
-        /></a>
+        <a href="#" class="logo">
+          <img class="logo__img" src="./img/logo.svg" alt="logo"/>
+        </a>
         <nav class="header__navigation">
           <ul class="header__menu">
             <li class="header__item">
@@ -43,30 +43,27 @@
           <h1 class="title title_type_primary hero__title">
             Dare to live the life you've always wanted.
           </h1>
-          <p
-            class="paragraph-section paragraph-section_type_primary hero__paragraph"
-          >
+          <p class="paragraph-section paragraph-section_type_primary hero__paragraph">
             Life is short and the world is wide. So, better get started.
           </p>
           <form class="hero__form">
             <div class="hero__form-fieldset hero__form-fieldset_type_location">
-              <span class="hero__form-title hero__form-title_type_location"
-                >Location</span
-              >
-              <p class="hero__form-value">Allentown, New Mexico</p>
+              <span class="hero__form-title hero__form-title_type_location">Location</span>
+              <p class="hero__form-value hero__form-value_type_location">Allentown, New Mexico</p>
+              <input class="hero__form-location" type="text" name="location" id="location" value="Allentown, New Mexico">
+              <button class="hero__button-ok" type="button">Ok</button>
             </div>
             <div class="hero__form-fieldset hero__form-fieldset_type_date">
               <label
                 class="hero__form-title hero__form-title_type_calendar"
-                for="calendar"
-                >Date
+                for="calendar">Date
                 <input
                   class="hero__calendar"
                   type="date"
                   name=""
                   id="calendar "
-                  value=""
-              /></label>
+                  value=""/>
+            </label>
               <p class="hero__form-value hero__form-value_type_date"></p>
             </div>
             <button class="hero__button" type="submit"></button>
@@ -104,9 +101,7 @@
           <h2 class="title title_type_secondary about-us__title">
             Our tour plan is to fulfil your dream wish
           </h2>
-          <p
-            class="paragraph-section paragraph-section_type_secondary about-us__paragraph"
-          >
+          <p class="paragraph-section paragraph-section_type_secondary about-us__paragraph">
             Understand to achieve anything requires faith and belief in
             yourself, vision, hard work, determination, and dedication.
           </p>
@@ -141,193 +136,15 @@
             The amazing places around the world
           </h2>
           <button
-            class="button-slider button-slider_type_left tour__button-left swiper-button-prev"
+            class="button-slider button-slider_type_left tour__button tour__button_type_left"
             type="button"
           ></button>
           <button
-            class="button-slider button-slider_type_right tour__button-right swiper-button-next"
+            class="button-slider button-slider_type_right tour__button tour__button_type_right"
             type="button"
           ></button>
 
-          <div class="tour__slider">
-            <!-- <div class="tour__slider-wrapper"> -->
-            <div class="card-large">
-              <img
-                src="./img/card-large/rodrigo-ardilha-WAPFd4fMy2o-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  Fall in love among the winding streets and snow-covered
-                </h3>
-                <p class="card-large__location">Prague, Czechia</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$200</p>
-                  <p class="card-large__duration">10 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/wong-zihoo-6qXPU-et7MA-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  History is not about the past but a map of the past
-                </h3>
-                <p class="card-large__location">Beijing, China</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$450</p>
-                  <p class="card-large__duration">5 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/raimond-klavins-0ceVeJj_ecE-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  The unique character as a symbol of taste and ostentation
-                </h3>
-                <p class="card-large__location">İstanbul, Turkey</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$150</p>
-                  <p class="card-large__duration">7 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/daniele-d-andreti-ud9u7beav2s-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  You don't want to pitch a tent and live inside the Louvre
-                </h3>
-                <p class="card-large__location">Paris, France</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$100</p>
-                  <p class="card-large__duration">3 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/rodrigo-ardilha-WAPFd4fMy2o-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  Fall in love among the winding streets and snow-covered
-                </h3>
-                <p class="card-large__location">Prague, Czechia</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$200</p>
-                  <p class="card-large__duration">10 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/wong-zihoo-6qXPU-et7MA-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  History is not about the past but a map of the past
-                </h3>
-                <p class="card-large__location">Beijing, China</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$450</p>
-                  <p class="card-large__duration">5 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/raimond-klavins-0ceVeJj_ecE-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  The unique character as a symbol of taste and ostentation
-                </h3>
-                <p class="card-large__location">İstanbul, Turkey</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$150</p>
-                  <p class="card-large__duration">7 days tour</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-large">
-              <img
-                src="./img/card-large/daniele-d-andreti-ud9u7beav2s-unsplash.jpg"
-                alt=""
-                class="card-large__img"
-              />
-              <div class="card-large__text">
-                <h3 class="card-large__title">
-                  You don't want to pitch a tent and live inside the Louvre
-                </h3>
-                <p class="card-large__location">Paris, France</p>
-                <div class="card-large__rating">
-                  <span class="card-large__star"></span>
-                  <p class="card-large__rating-number">4.9</p>
-                </div>
-                <div class="card-large__text-bottom">
-                  <p class="card-large__price">$100</p>
-                  <p class="card-large__duration">3 days tour</p>
-                </div>
-              </div>
-            </div>
-            <!-- </div> -->
-          </div>
+          <div class="tour__slider"></div>
         </div>
       </section>
       <section class="testimonial root__container main__testimonial">
@@ -637,7 +454,112 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="root__container"></div>
+      <div class="root__container footer__container">
+        <div class="footer__copy">
+          <a href="#" class="logo footer__logo">
+            <img class="logo__img" src="./img/logo.svg" alt="logo" />
+          </a>
+          <address class="footer__paragraph">4517 Washington Ave. Manchester, Kentucky 39495</address>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link_type_fb"></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link_type_ins"></a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link footer__social-link_type_yt"></a>
+            </li>
+          </ul>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-section footer__nav-section_type_about">
+            <h4 class="footer__title">About</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Features</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">News</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Plans</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section footer__nav-section_type_company">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Why Tripy</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Partner with us</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-section">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Account</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Support center</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Feedback</a>
+              </li>
+              <li class="footer__item">
+                <a href="" class="footer__link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__newsletter">
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__paragraph footer__paragraph_type_false">Subscribe our newsletter and get exciting offers </p>
+          <form class="footer__form">
+            <input class="footer__input" type="email" name="email" placeholder="Enter your email address">
+            <button class="footer__submit" type="submit"></button>
+          </form>
+        </div>
+      </div>
     </footer>
+
+    <template id="card-large">
+      <div class="card-large">
+        <img src="#" alt="img" class="card-large__img"/>
+          <div class="card-large__text">
+            <h3 class="card-large__title"></h3>
+              <p class="card-large__location"></p>
+                <div class="card-large__rating">
+                  <span class="card-large__star"></span>
+                  <p class="card-large__rating-number"></p>
+                </div>
+                <div class="card-large__text-bottom">
+                  <p class="card-large__price"></p>
+                  <p class="card-large__duration"></p>
+                </div>
+            </div>
+      </div>
+    </template>
   </body>
 </html>
+
+
+
+
+
+
