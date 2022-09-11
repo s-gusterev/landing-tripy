@@ -17,6 +17,17 @@ const locationInput = document.querySelector('.hero__form-location');
 const locationButton = document.querySelector('.hero__button-ok');
 const locationParagraph = document.querySelector('.hero__form-value_type_location');
 
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__navigation');
+const burgerLine = document.querySelectorAll('.burger__line')
+
+burger.addEventListener('click', () => {
+  menu.classList.toggle('header__navigation_active');
+  burgerLine.forEach((line) => {
+    line.classList.toggle('burger__line_active')
+  })
+})
+
 
 const visibleLocationForm = () => {
   locationInput.classList.toggle('hero__form-location_active');
@@ -79,8 +90,6 @@ cardLarge.forEach(({ title, image, country, rate, price, days }) => {
   cardLargeContainer.append(cardBody);
 }
 )
-
-
 
 $(".tour__slider").slick({
   infinite: true,

@@ -1,6 +1,7 @@
 .root {
   background-color: $color-bg;
   font-family: $font-primary;
+  overflow-x: hidden;
 
   &__container {
     max-width: 1170px;
