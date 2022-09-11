@@ -11,14 +11,16 @@
   &:active {
     transform: scale(1.2);
   }
+
   &_type_left {
-    background-image: url(./img/arrow-left.svg);
+    background-image: url(./img/icons/arrow-left.svg);
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   &_type_right {
-    background-image: url(./img/arrow-right.svg);
+    background-image: url(./img/icons/arrow-right.svg);
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;

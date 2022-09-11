@@ -14,10 +14,12 @@
     object-fit: cover;
     display: block;
   }
+
   &__text {
     padding: 20px 26px 30px 24px;
     box-sizing: border-box;
   }
+
   &__title {
     color: $color-dark;
     font-size: 20px;
@@ -35,6 +37,7 @@
     margin-top: 0;
     margin-bottom: 8px;
   }
+
   &__rating {
     display: flex;
     align-items: center;
@@ -57,7 +60,7 @@
   &__star {
     width: 15.55px;
     height: 15.64px;
-    background-image: url(./img/card-large/magic-star.svg);
+    background-image: url(./img/icons/magic-star.svg);
     background-size: contain;
     background-position: center;
   }

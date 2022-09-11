@@ -1,7 +1,7 @@
 {
-  "name": "webpack-lesson-test",
+  "name": "landing-tripy",
   "version": "1.0.0",
-  "description": "- Инициализировать проект - `npm init` или `npm init -y`",
+  "description": "Landing",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV='development' webpack serve",
@@ -9,7 +9,7 @@
     "build": "NODE_ENV='production' webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sergey Gusterev",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -31,7 +31,6 @@
     "webpack-dev-server": "^4.10.1"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1",
-    "swiper": "^8.3.2"
+    "slick-carousel": "^1.8.1"
   }
 }

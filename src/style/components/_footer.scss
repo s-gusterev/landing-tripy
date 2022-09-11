@@ -46,15 +46,15 @@
     background-repeat: no-repeat;
 
     &_type_fb {
-      background-image: url(./img/facebook.svg);
+      background-image: url(./img/icons/facebook.svg);
     }
 
     &_type_ins {
-      background-image: url(./img/instagram.svg);
+      background-image: url(./img/icons/instagram.svg);
     }
 
     &_type_yt {
-      background-image: url(./img/youtube.svg);
+      background-image: url(./img/icons/youtube.svg);
     }
   }
 
@@ -134,7 +134,7 @@
     height: 32px;
     background-color: $color-primary;
     border: none;
-    background-image: url(./img/send.svg);
+    background-image: url(./img/icons/send.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px 18px;
