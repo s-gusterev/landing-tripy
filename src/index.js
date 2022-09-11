@@ -48,7 +48,7 @@ locationInput.addEventListener("input", (e) => {
   const value = e.target.value;
   locationInput.setAttribute("value", value)
   console.log(value)
-});
+}, { passive: true });
 
 
 const setParagraphText = () => {
@@ -58,9 +58,9 @@ const setParagraphText = () => {
 }
 
 
-locationTitle.addEventListener('click', visibleLocationForm)
+locationTitle.addEventListener('click', visibleLocationForm, { passive: true })
 
-locationButton.addEventListener('click', setParagraphText)
+locationButton.addEventListener('click', setParagraphText, { passive: true })
 
 const date = new Date();
 const currentDate = date.toISOString().substring(0, 10);
@@ -80,7 +80,7 @@ const setDate = (currentDate) => {
 
 setDate(currentDate);
 
-calendar.addEventListener("change", (e) => setDate(e.target.value));
+calendar.addEventListener("change", (e) => setDate(e.target.value), { passive: true });
 
 cardLarge.forEach(({ title, image, country, rate, price, days }) => {
   const cardBody = cardTemplate.querySelector('.card-large').cloneNode(true);
