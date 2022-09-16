@@ -29,7 +29,6 @@
     line-height: 24px;
 
     position: relative;
-    transition: all 350ms ease-in;
 
     &:hover {
       color: $color-dark;
@@ -64,11 +63,13 @@
     @include flexCenter;
   }
 
+  &__navigation {
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+  }
+
   @media screen and (max-width: 890px) {
 
-    // &__navigation {
-    //   display: none;
-    // }
     &__navigation {
       width: 100vw;
       height: 100vh;
@@ -79,8 +80,9 @@
       background-color: $color-light-100;
       z-index: 1;
       transform: translateX(100%);
-      transition-duration: 250ms;
-      transition-delay: 250ms;
+      transition-property: opacity, transform;
+      transition-duration: 250ms, 250ms;
+      transition-delay: 250ms, 350ms;
       opacity: 0;
       visibility: hidden;
 
