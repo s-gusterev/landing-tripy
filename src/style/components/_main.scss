@@ -3,7 +3,19 @@
     margin-top: 84px;
     margin-bottom: 120px;
   }
+
   &__about-us {
     margin-bottom: 216px;
+
+    @media (max-width:768px) {
+      margin-bottom: 172px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__hero {
+      margin-top: 64px;
+      margin-bottom: 94px;
+    }
   }
 }

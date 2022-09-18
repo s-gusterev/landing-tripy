@@ -5,4 +5,9 @@
   color: $color-primary;
   text-transform: uppercase;
   margin: 0;
+
+  @media (max-width:483px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
