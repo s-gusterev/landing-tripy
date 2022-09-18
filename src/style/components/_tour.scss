@@ -19,22 +19,59 @@
     position: absolute;
     right: 58px;
     top: 45.5px;
+    z-index: 3;
+
+    @media (max-width: 749px) {
+      left: 400px;
+      top: 400px;
+    }
+
+    @media (max-width: 545px) {
+      left: 10px;
+      top: 150px;
+    }
+
+    @media (max-width: 483px) {
+      top: 130px;
+    }
+
+    @media (max-width: 392px) {
+      top: 170px;
+    }
   }
 
   &__button_type_right {
     position: absolute;
     right: 0;
     top: 45.5px;
+    z-index: 3;
+
+    @media (max-width: 749px) {
+      left: 470px;
+      top: 400px;
+    }
+
+    @media (max-width: 545px) {
+      left: 90%;
+      top: 150px;
+    }
+
+    @media (max-width: 483px) {
+      top: 130px;
+    }
+
+    @media (max-width: 392px) {
+      top: 170px;
+    }
   }
 }
 
 .tour__slider {
-  --slider-index: 0;
   width: 100vw;
   display: flex;
   column-gap: 30px;
   padding-bottom: 120px;
-  transform: translateX(calc(var(--slider-index) * -100%));
+  overflow: hidden;
 }
 
 // .tour__slider-wrapper {

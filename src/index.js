@@ -92,11 +92,41 @@ cardLarge.forEach(({ title, image, country, rate, price, days }) => {
 )
 
 $(".tour__slider").slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: $(".tour__button_type_left"),
   nextArrow: $(".tour__button_type_right"),
+  responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1140,
+      settings: {
+        slidesToShow: 2.5,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 930,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $(".testimonial__list").slick({
